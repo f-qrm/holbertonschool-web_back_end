@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from typing import List, Union
 """
 This module provides a function to sum a list containing both integers and
 floats.
@@ -7,6 +6,7 @@ floats.
 It demonstrates the use of complex type annotations and proper documentation
 for both the module and the function according to project requirements.
 """
+from typing import List, Union
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
