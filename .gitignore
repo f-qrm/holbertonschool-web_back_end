@@ -12,3 +12,4 @@ python_variable_annotations/__pycache__/8-make_multiplier.cpython-38.pyc
 .gitignore
 .gitignore
 python_async_function/0-basic_async_syntax.py
+python_async_function/__pycache__/0-basic_async_syntax.cpython-38.pyc
