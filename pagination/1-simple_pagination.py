@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-
+"""
+This module contains a helper function to calculate index ranges
+for paginating datasets.
+"""
 from typing import Tuple
 import csv
 import math
