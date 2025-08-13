@@ -7,15 +7,15 @@ if __name__ == "__main__":
     collection = db.nginx
 
     log_count = collection.count_documents({})
-    print(f"{log_count} logs")
+    print(f'{log_count} logs')
 
-    print("Methods:")
-    methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
+    print('Methods:')
+    methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELET']
     for method in methods:
-        count = collection.count_documents({"method": method})
-        print(f"/tmethod {method}: {count}")
+        count = collection.count_documents({'method': method})
+        print(f'/tmethod {method}: {count}')
 
     status_check = collection.count_documents(
-        {"method": "GET", "path": "/status"}
+        {'method': 'GET', 'path': '/status'}
         )
-    print(f"{status_check} status check")
+    print(f'{status_check} status check')
