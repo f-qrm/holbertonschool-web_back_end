@@ -31,3 +31,10 @@ NoSQL/.vscode/settings.json
 NoSQL/dump.zip
 NoSQL/dump/logs/nginx.bson
 NoSQL/dump/logs/nginx.metadata.json
+ES6_basic/node_modules/.bin/acorn
+ES6_basic/package.json
+ES6_basic/package-lock.json
+.gitignore
+ES6_basic/babel.config.js
+ES6_basic/nodesource_setup.sh
+ES6_basic/.eslintrc.js
