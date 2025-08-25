@@ -38,3 +38,7 @@ ES6_basic/package-lock.json
 ES6_basic/babel.config.js
 ES6_basic/nodesource_setup.sh
 ES6_basic/.eslintrc.js
+ES6_data_manipulation/node_modules/@ampproject/remapping/dist/remapping.mjs
+ES6_data_manipulation/node_modules/.bin/acorn
+ES6_data_manipulation/node_modules/@ampproject/remapping/dist/remapping.mjs.map
+ES6_data_manipulation/node_modules/.bin/atob
