@@ -42,3 +42,4 @@ ES6_data_manipulation/node_modules/@ampproject/remapping/dist/remapping.mjs
 ES6_data_manipulation/node_modules/.bin/acorn
 ES6_data_manipulation/node_modules/@ampproject/remapping/dist/remapping.mjs.map
 ES6_data_manipulation/node_modules/.bin/atob
+ES6_promise/.eslintrc.js
