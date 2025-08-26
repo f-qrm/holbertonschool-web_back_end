@@ -7,7 +7,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       if (r.status === 'fulfilled') {
         return { status: r.status, value: r.value };
       }
-      return { status: r.status, value: r.reason };
+      return { status: r.status, value: r.reason.toString() };
     });
   });
 }
