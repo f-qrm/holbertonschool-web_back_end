@@ -11,3 +11,4 @@ process.stdin.on('end', () => {
     console.log('This important software is now closing');
   }
 });
+module.exports = null;
