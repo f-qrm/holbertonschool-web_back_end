@@ -19,6 +19,7 @@ const app = http.createServer(async (req, res) => {
     } catch (err) {
       console.log = originalLog;
       res.end('Data cannot be loaded');
+      return;
     }
     console.log = originalLog;
     output = output.trimEnd();
