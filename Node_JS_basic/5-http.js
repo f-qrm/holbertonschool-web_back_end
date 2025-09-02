@@ -18,7 +18,7 @@ const app = http.createServer(async (req, res) => {
       await countStudents(path);
     } catch (err) {
       console.log = originalLog;
-      res.end('Data cannot be loaded');
+      res.end('This is the list of our students\nCannot load the database');
       return;
     }
     console.log = originalLog;
