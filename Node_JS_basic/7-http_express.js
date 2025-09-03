@@ -12,20 +12,21 @@ app.get('/students', async (req, res) => {
   res.set('Content-Type', 'text/plain');
 
   let output = '';
-  const path = process.argv[2];
+  const database = process.argv[2];
   const originalLog = console.log;
 
   console.log = (msg) => { output += `${msg}\n`; };
   try {
-    await countStudents(path);
+    await countStudents(database);
+    output = output.trimEnd();
+    res.send(`This is the list of our students\n${output}`);
   } catch (err) {
     console.log = originalLog;
     res.end('Cannot load the database');
     return;
-  }
+  } finally {
   console.log = originalLog;
-  output = output.trimEnd();
-  res.send(`This is the list of our students\n${output}`);
+  }
 });
 
 app.listen(1245);
