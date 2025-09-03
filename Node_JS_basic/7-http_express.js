@@ -25,7 +25,7 @@ app.get('/students', async (req, res) => {
     res.end('Cannot load the database');
     return;
   } finally {
-  console.log = originalLog;
+    console.log = originalLog;
   }
 });
 
