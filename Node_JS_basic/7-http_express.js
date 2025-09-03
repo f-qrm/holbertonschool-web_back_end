@@ -1,12 +1,12 @@
 const express = require('express');
 const countStudents = require('./3-read_file_async');
+
 const app = express();
 
 app.get('/', (req, res) => {
   res.set('Content-Type', 'text/plain');
-  res.send('Hello Holberton School!')
+  res.send('Hello Holberton School!');
 });
-
 
 app.get('/students', async (req, res) => {
   res.set('Content-Type', 'text/plain');
@@ -20,7 +20,7 @@ app.get('/students', async (req, res) => {
     await countStudents(path);
   } catch (err) {
     console.log = originalLog;
-    res.end('Cannot load the database')
+    res.end('Cannot load the database');
     return;
   }
   console.log = originalLog;
