@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 app.get('/students', async (req, res) => {
   res.type('text');
 
-  let output = '';
   const database = process.argv[2];
+  let output = '';
   const originalLog = console.log;
 
   console.log = (msg) => { output += `${msg}\n`; };
@@ -23,7 +23,7 @@ app.get('/students', async (req, res) => {
     return;
   } catch (err) {
     console.log = originalLog;
-    res.send('Cannot load the database');
+    res.send('This is the list of our students\nCannot load the database');
     return;
   } finally {
     console.log = originalLog;
